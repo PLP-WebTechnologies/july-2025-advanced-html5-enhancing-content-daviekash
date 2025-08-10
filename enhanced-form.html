@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header, main, footer {
+            padding: 20px;
+            background: #fff;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            display: grid;
+            gap: 12px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        img, video {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Registration Page</h1>
+    <p>Complete the steps below to register for our services.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Steps to Register</h2>
+        <ol>
+            <li>Read the instructions carefully.</li>
+            <li>Fill out the registration form below.</li>
+            <li>Review your information before submitting.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Service Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>3 months</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Mobile App Development</td>
+                    <td>4 months</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Digital Marketing</td>
+                    <td>2 months</td>
+                    <td>$800</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media Preview</h2>
+        <img src="https://via.placeholder.com/600x300" alt="Sample Project Image">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="\+?[0-9]{10,15}" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" value="Kenya" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" minlength="4" maxlength="12" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Tell us something about yourself..." rows="4"></textarea>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the Terms & Conditions
+            </label>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Web Solutions Ltd. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
